@@ -677,11 +677,14 @@
                     <attribute id="V2" type="float" value="0.24951172"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="a1DD_Drake_General"/>
+                    <attribute id="MapKey" type="FixedString" value="a1DD_Drake_General"/> <!--NOTE: Again, the value here has to match the name in the RootTemplate in order to show up, and the tooltip name has to match this (and have the .DDS file name extension) in order to show up as well.-->
                     <attribute id="U1" type="float" value="0.00048828125"/>
                     <attribute id="U2" type="float" value="0.062011719"/>
                     <attribute id="V1" type="float" value="0.37548828"/>
                     <attribute id="V2" type="float" value="0.43701172"/>
+                    <!--NOTE: So I added the icon to Icons_Items_6 since that atlas had empty spaces. This file is basically the key that tells the game the coordinates of each icon
+                    (unfortunately they are *not* in the order that you see them in the atlas; if you're good at math them you can probably figure out how to calculate the coordinates yourself,
+                    but I'm not so I opened up Icons_Items_3.lsx since that atlas is the same size as 6 and did a little digging to find the right coordinates).-->
                 </node>
             </children>
         </node>
